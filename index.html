@@ -607,7 +607,11 @@
     </section>
     <hr class="rowfooter">
     <footer id="footer">
-        <p>&copy; 2023 - FOODinteract Research Team (I3A-LAQV)</p>
+        <p>&copy; 2023 - <span id="year"></span> - FOODinteract Research Team (LAQV-REQUIMTE)</p>
     </footer>
+    <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('year').textContent = currentYear;
+    </script>
 </body>
 </html>
